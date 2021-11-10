@@ -11,6 +11,7 @@ from models.net import EntityTagger
 
 
 def main():
+    print("h")
     opts = parse_arguments()
     os.environ["CUDA_VISIBLE_DEVICES"] = f"{opts.gpu}"
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
